@@ -4,31 +4,32 @@ import styles from "./my-style.module.css";
 
 export default function Account() {
   const { id } = useParams();
+
   return (
     <div>
-      <table>
+      <table className={styles.secondPage}>
         <tr>
-          <th>ID</th>
-          <td>{id}</td>
+          <th className={styles.secondPage}>ID</th>
+          <td className={styles.secondPage}>{id}</td>
         </tr>
         <tr>
-          <th>Name</th>
-          <td>Account {id}</td>
+          <th className={styles.secondPage}>Name</th>
+          <td className={styles.secondPage}>Account {id}</td>
         </tr>
         <tr>
-          <th>Owner</th>
-          <td>User {id}</td>
+          <th className={styles.secondPage}>Owner</th>
+          <td className={styles.secondPage}>User {id}</td>
         </tr>
         <tr>
-          <th>Created On</th>
-          <td>5-8-2021</td>
+          <th className={styles.secondPage}>Created On</th>
+          <td className={styles.secondPage}>5-8-2021</td>
         </tr>
         <tr>
-          <th>Updated On</th>
-          <td>5-8-2021</td>
+          <th className={styles.secondPage}>Updated On</th>
+          <td className={styles.secondPage}>5-8-2021</td>
         </tr>
       </table>
-      <button>
+      <button className={styles.buttonMain}>
         <Link to="/">Main List</Link>
       </button>
     </div>
